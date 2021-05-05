@@ -102,6 +102,7 @@ kg = (5,2382)
 a5 = len(msg_falls)
 falls = []
 ptss = []
+pxt=[]
 shift = "xExit"
 class enco:
    def enc0(self):
@@ -170,7 +171,6 @@ class enco:
          sys.exit()
       corrida(wh+'-------------------------\n'+ve)
 sjs = True
-pxt=[]
 p1 = enco()
 p1.enc0()
 p1.enc3()
