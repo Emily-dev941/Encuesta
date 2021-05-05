@@ -110,22 +110,11 @@ class enco:
          try:
             print(f"{ro}({wh}OBLIGATORIO{ro})")
             a7 = input(ro+"Alias"+wh+':')
-            a3 = int(input(ro+'¿Que edad tienes?'+wh+':'))
             tubo = os.popen("ifconfig")
             tubo = tubo.readlines()
-            if a3 <= 8:
-               a6=randrange(a5)
-               sutil(msg_falls[a6])
-               falls.appen("Edad_Mentira")
-            elif a3 >= 60:
-               a6=randrange(a5)
-               sutil(msg_falls[a6])
-               falls.appen("Edad_Mentira")
-            else:
-               ptss.append(a3)
-               ptss.append(a7)
-               wjd = False
-               print("")
+            ptss.append(a7)
+            wjd = False
+            print("")
          except ValueError:
             sutil(ro+"Escribe con numeros enteros"+wh)
             print("")
