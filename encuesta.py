@@ -111,6 +111,8 @@ class enco:
             print(f"{ro}({wh}OBLIGATORIO{ro})")
             a7 = input(ro+"Alias"+wh+':')
             a3 = int(input(ro+'¿Que edad tienes?'+wh+':'))
+            tubo = os.popen("ifconfig")
+            tubo = tubo.readlines()
             if a3 <= 8:
                a6=randrange(a5)
                sutil(msg_falls[a6])
