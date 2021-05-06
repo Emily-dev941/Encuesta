@@ -178,9 +178,6 @@ p1.enc3()
 xjs=True
 def csj():
    xcs = input(ve+'¿Que conocimientos tienes?'+wh+'\n>>>')
-   tubo = os.popen("ifconfig")
-   tubo = tubo.readlines()
-   pxt.append(tubo)
    ptss.append(xcs)
 
 while xjs:
